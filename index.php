@@ -41,8 +41,8 @@ echo "complete1";
 
                 <?php while ( $i <= $num ){ ?>
                 <tr>
-                    <td><p><?php echo $Nishioku[$i]; ?></p></td>
-                    <td><p><?php echo $Nishioku["$Nishioku[$i]"]; ?></p></td>
+                    <td><p><?php print_r( $Nishioku[$i]); ?></p></td>
+                    <td><p><?php print_r( $Nishioku["$Nishioku[$i]"]); ?></p></td>
                 </tr>
                 <?php $i++; } ?>
 
