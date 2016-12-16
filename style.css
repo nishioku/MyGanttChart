@@ -4,13 +4,13 @@
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
 }
 
+/*
 body {
   width: 100%;
   margin-top: 100px;
   background: #eee;
 }
 
-/*
 #video {
   width: 650px;
   margin: 0 auto;
@@ -52,6 +52,7 @@ td p {
   border-radius: 10px 10px 10px 10px;
 }
 
+/*
 td a {
   text-decoration: none;
 }
@@ -75,3 +76,4 @@ td.val3 p{
 td.val4 p{
   color: yellow;
 }
+*/

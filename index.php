@@ -1,15 +1,24 @@
 <?php
 
+$i = 0;
+
 /*Connect MySQL*/
-mysql_connect('localhost', 'root', 'root') or die(mysql_error());
-mysql_select_db('MyGanttChart');
-mysql_query('set names UTF-8');
+$link = mysql_connect( 'localhost', 'root', 'root' );
+mysql_select_db( 'MyGanttChart' );
+mysql_query( 'set names UTF-8' );
 
-$Sql1 = sprintf('select * from user where ID = 1');
-$Set1 = mysql_query($Sql1) or die(mysql_error());
-$Nishioku = mysql_fetch_assoc($Set1);
 
-var_dump($Nishioku);
+/*Fetch information ID=1*/
+$Sql1 = sprintf( 'select * from user where ID = 1' );
+$Set1 = mysql_query( $Sql1 ) or die(mysql_error());
+$Nishioku = mysql_fetch_assoc( $Set1 );
+$num = mysql_num_fields( $Nishioku ) ;
+
+
+/*Pull DBname*/
+$DBList = mysql_list_dbs( $link );
+$DBName = mysql_db_name( $DBList, 1 );
+$cnt = mysql_num_rows( $DBList );
 
 ?>
 
@@ -23,8 +32,16 @@ var_dump($Nishioku);
         <div id="table">
             <table>
                 <tr>
-                    <th></th>
+                    <th colspan="2"><p><?php echo $DBname; ?></p></th>
                 </tr>
+
+                <?php while ( $i <= $num ){ ?>
+                <tr>
+                    <td><p><?php echo $Nishioku[$i]; ?></p></td>
+                    <td><p><?php echo $Nishioku[$Nishioku[$i]]; ?></p></td>
+                </tr>
+                <?php $i++; } ?>
+
             </table>
         </div>
     </div>
