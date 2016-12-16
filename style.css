@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+body {
+  width: 100%;
+  margin-top: 100px;
+  background: #eee;
+}
+
+/*
+#video {
+  width: 650px;
+  margin: 0 auto;
+  padding:  10px;
+  background: #000;
+  border: solid 1px #000;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#video2 {
+  padding: 5px;
+  margin: 0 auto;
+  border-radius: 10px 10px 10px 10px;
+}
+*/
+
+#main {
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+  width: 640px;
+  /*border-radius: 10px 10px 10px 10px;*/
+}
+
+table {
+  width: 640px;
+  margin: 0 auto;
+}
+
+th p{
+  font-size: 30px;
+}
+
+td p {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  background: silver;
+  border-radius: 10px 10px 10px 10px;
+}
+
+td a {
+  text-decoration: none;
+}
+
+td p:hover {
+  background: #69e;
+}
+
+td.val1 p{
+  color: red;
+}
+
+td.val2 p{
+  color: green;
+}
+
+td.val3 p{
+  color: blue;
+}
+
+td.val4 p{
+  color: yellow;
+}

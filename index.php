@@ -16,8 +16,16 @@ var_dump($Nishioku);
 <html>
     <head>
         <!--<link rel="icon" type="image/vnd.microsoft.icon" href="okuvideo.ico">-->
-        <!--<link rel="stylesheet" href="style.css">-->
+        <link rel="stylesheet" href="style.css">
         <title>MyGanttChart</title>
     </head>
-
+    <div id="main">
+        <div id="table">
+            <table>
+                <tr>
+                    <th></th>
+                </tr>
+            </table>
+        </div>
+    </div>
 </html>
