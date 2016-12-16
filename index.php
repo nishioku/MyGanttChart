@@ -1,4 +1,5 @@
 <?php
+
 /*Connect MySQL*/
 mysql_connect('localhost', 'root', 'root') or die(mysql_error());
 mysql_select_db('MyGanttChart');
@@ -8,7 +9,7 @@ $Sql1 = sprintf('select * from user where ID = 1');
 $Set1 = mysql_query($Sql1) or die(mysql_error());
 $Nishioku = mysql_fetch_assoc($Set1);
 
-echo $Nishioku;
+var_dump($Nishioku);
 
 ?>
 
