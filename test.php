@@ -1,6 +1,7 @@
 <?php
+error_reporting(E_ALL);
 
-$link = mysql_connect('localhost', 'root', 'root') or die(mysql_error());
+$link = mysql_connect('localhost', 'root', 'root');
 $db_list = mysql_list_dbs($link);
 
 $i = 0;
@@ -9,5 +10,4 @@ while ($i < $cnt) {
     echo mysql_db_name($db_list, $i) . "\n";
     $i++;
 }
-
 ?>
