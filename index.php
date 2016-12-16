@@ -36,13 +36,13 @@ echo "complete1";
         <div id="table">
             <table>
                 <tr>
-                    <th colspan="2"><p><?php echo $DBname; ?></p></th>
+                    <th colspan="2"><p><?php echo $DBName; ?></p></th>
                 </tr>
 
                 <?php while ( $i <= $num ){ ?>
                 <tr>
                     <td><p><?php echo $Nishioku[$i]; ?></p></td>
-                    <td><p><?php echo $Nishioku[$Nishioku[$i]]; ?></p></td>
+                    <td><p><?php echo $Nishioku["$Nishioku[$i]"]; ?></p></td>
                 </tr>
                 <?php $i++; } ?>
 
